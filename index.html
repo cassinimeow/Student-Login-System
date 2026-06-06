@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Login System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Student Login System</h2>
+    <form id="studentForm">
+      <input type="hidden" id="studentId">
+      <input type="text" id="student_number" placeholder="Student Number" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="full_name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <button type="submit">Add / Update Student</button>
+    </form>
+    <div id="message"></div>
+    <h3>All Students</h3>
+    <table id="studentsTable" border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Student Number</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
